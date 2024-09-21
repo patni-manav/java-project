@@ -1,7 +1,7 @@
 <form action="action_page.php">
   <div class="container">
     <h1>Hi I am Krishna Indani, this is my page !</h1>
-    <p>Changing this paragraph change</p>
+    <p>Changing this paragraph</p>
     <hr>
      
     <label for="Name"><b>Enter Name</b></label>
