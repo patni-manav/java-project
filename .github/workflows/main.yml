@@ -68,7 +68,7 @@ jobs:
         IMAGE_TAG: ${{ steps.commit.outputs.short }}
  
       run: |
-        aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 108782057573.dkr.ecr.ap-south-1.amazonaws.com
-        docker build -t project-repo .
-        docker tag project-repo:latest 108782057573.dkr.ecr.ap-south-1.amazonaws.com/project-repo:latest
-        docker push 108782057573.dkr.ecr.ap-south-1.amazonaws.com/project-repo:latest
+       aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 746669217138.dkr.ecr.ap-south-1.amazonaws.com
+       docker build -t project-repo .
+       docker tag project-repo:latest 746669217138.dkr.ecr.ap-south-1.amazonaws.com/project-repo:latest
+       docker push 746669217138.dkr.ecr.ap-south-1.amazonaws.com/project-repo:latest
