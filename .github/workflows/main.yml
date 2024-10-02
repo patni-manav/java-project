@@ -6,7 +6,7 @@ on:
     branches: [ main ]
 env:
  
-  ECR_REPOSITORY: ecsrepository
+  ECR_REPOSITORY: project-repo
  
   
  
@@ -70,6 +70,6 @@ jobs:
  
       run: |
  
-        docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:latest -f Dockerfile .
+        docker build -t project-repo .
  
-        docker push $ECR_REGISTRY/$ECR_REPOSITORY:latest
+        docker push 108782057573.dkr.ecr.ap-south-1.amazonaws.com/project-repo:latest
